@@ -14,25 +14,12 @@
 
 **State diagram**
 
-![FSM](docs/img/soda_machine_state.jpg)
+![FSM](docs/img/SM_rg_state.jpg)
 
 **RTL (Quartus RTL Viewer)**
 
-![RTL](docs/img/rtl_soda_machine.jpg)
+![RTL](docs/img/SM_RTL.jpg)
 
----
-
-## Тесты
-
-| №   | Название                 | Стимул         | Что проверяем                                  | Ожидаемый результат                                | Статус |
-|-----|--------------------------|----------------|------------------------------------------------|----------------------------------------------------|--------|
-| TC1 | 3 копейки (полный цикл) | `coin3` = 1 такт | Последовательно: `syrup → water → gas`; после газирования — `reserve` | `syrup=10`, `water=20`, `gas=15`, `reserve=25` тактов | PASS  |
-
----
-
-## P.S.
-
-Тестовый набор пока **минимальный(** (супер-пробная версия) и будет расширяться.
 
 <p align="center">
   <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExbm8xb3BoczBzdGR1bzFpOTBzaDQ2cndkamR6eXc5cXc1czh3YW5wNyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/82nxC1u2BC8VU1wiZq/giphy.gif" alt="fizzy soda" width="420">
